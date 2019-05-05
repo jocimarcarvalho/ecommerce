@@ -1,5 +1,6 @@
 {
     "name": "jocimarcarvalho/ecommerce",
+    "description": "Site loja",
     "authors": [
         {
             "name": "Jocimar Carvalho",
@@ -13,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\jocimarcarvalho\\php-classes\\src"
+            "Hcode\\": "vendor\\hcodebr\\php-classes\\src"
         }
     }
 }
