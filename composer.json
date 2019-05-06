@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Hcode\\": "vendor\\hcodebr\\php-classes\\src"
+            "Lexter\\": "vendor\\hcodebr\\php-classes\\src"
         }
     }
 }

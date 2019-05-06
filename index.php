@@ -1,19 +1,20 @@
 <?php 
 
 require_once("vendor/autoload.php");
+use \Slim\Slim;
+use \Lexter\Page;
 
-$app = new \Slim\Slim();
+$app = new Slim();
 
 $app->config('debug', true);
 
 $app->get('/', function() {
     
-	$sql = new Hcode\DB\Sql();
-	
-	$results = $sql->select("SELECT * FROM tb_users");
+	$page = new Page(); //Logo na criação do template, ele chama o construtor e joga o header na tela
+	$page->setTpl("index"); //aqui ele joga o conteúdo do index
 
-	echo json_encode($results);
 
+//O footer ele joga quando terminar de executar a classe, pois ele está dentro do destruct
 });
 
 // $app->get('/frase/:me', function($nome){
